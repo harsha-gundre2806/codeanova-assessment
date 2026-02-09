@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | G Harsha Vardhan Reddy</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      padding-top: 70px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0066ff;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #f5f5f5;
+      padding: 15px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    /* Hero */
+    .hero {
+      background: #82b4ff;
+      color: white;
+      text-align: center;
+      padding: 60px 10%;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+    }
+
+    .hero p {
+      margin: 10px 0 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #0066ff;
+      color: white;
+      border-radius: 4px;
+      margin: 5px;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 10%;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #0066ff;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 6px;
+      background: #fafafa;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f5f5f5;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<!-- thankyou for the opportunity, if you are checking this i will be happy -->
+<body> 
+
+  <!-- Navbar -->
+  <nav>
+    <strong>Portfolio</strong>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero section -->
+  <header class="hero">
+    <h1>Hi, I'm G Harsha Vardhan Reddy</h1>
+    <p>Frontend Developer | React | JavaScript | Python | DSA</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Frontend Developer with experience building responsive web applications
+      using React, JavaScript, and Tailwind CSS. Strong foundation in Data
+      Structures & Algorithms and Python. Passionate about clean code and performance.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, JavaScript, C, C++</li>
+      <li><strong>Frontend:</strong> React, HTML, CSS, Tailwind CSS</li>
+      <li><strong>Backend:</strong> Firebase, Django (Basics)</li>
+      <li><strong>Tools:</strong> GitHub, VS Code, Jupyter Notebook, Vercel</li>
+      <li><strong>Core:</strong> Data Structures & Algorithms</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Frontend Developer Intern</h3>
+        <p><strong>Ceeras IT Services</strong> | May 2025 – Sep 2025</p>
+        <ul>
+          <li>Built responsive UI using React & JavaScript</li>
+          <li>Worked with Django templates and routing</li>
+          <li>Optimized UI using Tailwind CSS</li>
+          <li>Collaborated using GitHub</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Data Science Intern</h3>
+        <p><strong>Edu-Versity</strong> | Oct 2024 – Nov 2024</p>
+        <ul>
+          <li>Data analysis using Pandas & NumPy</li>
+          <li>Worked with Jupyter Notebooks</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>SVUCE Learn</h3>
+        <p>
+          Academic learning platform built with React and Tailwind CSS.
+          Designed mobile-first UI improving access for 1,000+ students.
+        </p>
+        <a href="https://svucelearn.vercel.app/">Live</a>
+      </div>
+
+      <div class="card">
+        <h3>Campus Order Guard</h3>
+        <p>
+          Real-time parcel tracking system using React and Firebase.
+          Automated delivery notifications and reduced package loss.
+        </p>
+        <a href="https://github.com/harsha-gundre2806/campus-order-guard">GitHub</a> |
+        <a href="https://campus-order-guard.vercel.app/">Live</a>
+      </div>
+    </div>
+  </section>
+  <!-- Certifications -->
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Web Development</h3>
+      <p><strong>IBM</strong> | May 2025</p>
+      <a href="https://www.credly.com/badges/99bc4e1f-5f14-480c-876b-fb81627d9f4d/public_url">
+        View Certificate
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Data Analytics with Python</h3>
+      <p><strong>IIT Roorkee</strong> | Apr 2025</p>
+      <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs17/Course/NPTEL25CS17S115890073604285729.pdf">
+        View Certificate
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Fundamental AI Concepts</h3>
+      <p><strong>Microsoft</strong> | May 2025</p>
+    </div>
+
+    <div class="card">
+      <h3>JavaScript Practicals</h3>
+      <p><strong>Udemy</strong> | 2025</p>
+      <a href="https://www.udemy.com/certificate/UC-c6030bdb-1f78-4ca0-ae52-65d272d2fbc7/">
+        View Certificate
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>General Management Quiz</h3>
+      <p><strong>IIM Calcutta</strong> | May 2025</p>
+      <a href="https://unstop.com/certificate-preview/37a14ae9-f540-49d2-8f43-519c45c2c016">
+        View Certificate
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:harshagundre2806@gmail.com">harshagundre2806@gmail.com</a></p>
+    <p>
+      <a href="https://github.com/harsha-gundre2806">GitHub</a> |
+      <a href="https://www.linkedin.com/in/g-harsha-vardhan-reddy-23176b333/">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 G Harsha Vardhan Reddy</p>
+  </footer>
+
+</body>
+</html>
